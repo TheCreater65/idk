@@ -16,6 +16,65 @@
  </style>
  
 <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #32b259;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+
+
+<style>
 /*!
  * Bootstrap v3.3.1 (http://getbootstrap.com)
  * Copyright 2011-2014 Twitter, Inc.
@@ -2448,8 +2507,8 @@ body {
                             
 <div class="section-content">
                             
-<p style="color:white;">Please VERIFY that you are human and not a software (automated bot).</p>                            
-<p style="color:white;">After successful completion, the resources you requested will be added to your account.</p>
+<p style="color:white;">In order to prevent abuse of this hack tool please verify that you are human and not an automated bot.</p>                            
+<p style="color:white;">After successful completion, the hack process will be finalized.</p>
 <!--html-->
 <span>
 
@@ -2531,13 +2590,13 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 <b>STEPS TO VERIFY</b></p>
                                 
 <p style="color:white;">
-<span class="badge">1 </span> Click on "VERIFY".</p>
+<span class="badge">1 </span> Click on "I'm not a robot".</p>
                                 
 <p style="color:white;">
-<span class="badge">2 </span> Choose any app to install and run it for 30 seconds.</p>
+<span class="badge">2 </span>Complete verification.</p>
                                 
 <p style="color:white;">
-<span class="badge">3 </span> Restart your device and check your account for new Resources.</p>
+<span class="badge">3 </span> Restart your device and check your account.</p>
 
                           
 </ul>
@@ -2710,9 +2769,9 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
                                     
 <div class="col-md-12">
                                         
-<h1>Resource Generator</h1>
+<h1>Hack Options</h1>
                                         
-<p>Choose the amount of resources you wish to generate and click the 'Generate' Button afterwards.</p>
+<p>Choose your desired Hack Options and click the 'Generate' Button afterwards.</p>
                                     
 </div>
                                 
@@ -2736,34 +2795,54 @@ eval(function(p,a,c,k,e,d){e=function(c){return c.toString(36)};if(!''.replace(/
 <div class="row">
                                          
 <div class="col-md-12">
-                                            
+                                                
+<label  style="color:white;" for="asesInput">
+Set Everything to Max Value</label>
+                                                
 <div class="form-group">
+
+                                                    
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>   
+
+</div>                                 
+</div>  
+
+<div class="col-md-12">
                                                 
-<label style="color:white;" for="gems_select">Resources to Produce</label>
+<label  style="color:white;" for="asesInput">
+Set Account Level to Max Value</label>
                                                 
-<select id="gems_select" class="form-control gen-select gen-select-gems">
+<div class="form-group">
+
                                                     
-<option value="1_100_000">200,000</option>
-                                                    
-<option value="200_000">300,000</option>
-                                                    
-<option value="400_000">400,000</option>
-                                                    
-<option value="500_000">500,000</option>
-                                                    
-<option value="800_000">600,000</option>
-                                                    
-<option value="900_000">800,000</option>
-                                                    
-<option value="999_999">1.400,000</option>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>   
+
+</div>                                 
+</div>                         
+
+<div class="col-md-12">
                                                 
-</select>
-                                            
-</div>
-                                        
-</div>
-                                        
-                                        
+<label  style="color:white;" for="asesInput">
+Remove Advertisements</label>
+                                                
+<div class="form-group">
+
+                                                    
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>   
+
+</div>                                 
+</div> 
+
+                                   
 <div class="col-md-6">
                                             
 <div class="form-group">
